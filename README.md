@@ -1,5 +1,15 @@
 # Defend The Tenant – Phase 1 · Tenny McTenantFace
 
+## Phase 2 & evidence
+
+| | |
+|---|---|
+| **Phase 2 – Security hardening plan** | [TennyMcTenantFace-Phase2.md](TennyMcTenantFace-Phase2.md) |
+| **Assessment script output** (identifiers redacted) | [hardening-results-REDACTED.txt](hardening-results-REDACTED.txt) |
+| **AI Skills Navigator playlist** (100 % completed) | [AISkillsNavigator-Playlist.png](AISkillsNavigator-Playlist.png) |
+
+This README documents Phase 1: how each of the 10 controls was configured and verified, with screenshots.
+
 ## Introduction
 
 The work is part of the Microsoft Defend The Tenant challenge. Phase 1 secures a preconfigured Microsoft 365 tenant (Contoso); Phase 2 turns these controls into a customer-focused hardening plan. These 10 security controls were configured:
