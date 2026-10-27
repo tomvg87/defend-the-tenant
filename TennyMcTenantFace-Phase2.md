@@ -6,12 +6,12 @@ Tenny McTenantFace
 - About 100 users who work from anywhere and meet with clients and partners in Teams.
 - Two admins who also run day-to-day IT. No Security Operations Center.
 - Microsoft 365 E7. Entra ID P2 (Conditional Access, ID Protection, PIM), Intune, Defender, Purview, the Entra Suite, Copilot and Agent 365 are already licensed.
-- The current gap is configuration (only two admins) and not budget (E7 licenses)
+- The gap is configuration, not budget: E7 already includes the needed tools, but two admins have limited time to set them up and monitor them.
 
 ## How I ranked the security controls
 
 I ranked by **how likely the attack is and/or how much damage it does**, and then by **effort for two admins**.
-Every Cpnditional Access policy follows the same pattern:
+Every Conditional Access policy follows the same pattern:
 
 1. Create two cloud-only **break-glass accounts**. They are the only exclusion in every policy, so a mistake can never lock them out.
 2. Turn the policy on in **report-only** mode and check it with **What If**, both with a regular user and a break-glass account
