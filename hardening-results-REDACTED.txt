@@ -1,0 +1,161 @@
+
+Microsoft 365 live recommendation status
+Tenant: <TENANT-ID> | Checked at: 2026-10-20 12:16:40Z
+MFA results check enabled configuration; complete coverage and registration are advisory.
+Registration data can lag by up to 36 hours. UNKNOWN means not verified, not necessarily unconfigured.
+
+
+Number Status      Recommendation                                                                     Evidence
+------ ------      --------------                                                                     --------
+     1 IMPLEMENTED Ensure multifactor authentication is enabled for all users in administrative roles Enabled MFA policy found:
+                                                                                                      'CA001-Require-MFA-Admins' (ID:
+                                                                                                      <CA001-POLICY-ID>, state: enabled);
+                                                                                                      'CA002-Require-MFA-All-Users' (ID:
+                                                                                                      <CA002-POLICY-ID>, state: enabled);
+                                                                                                      'CA004-Require-MFA-Medium-High-SignIn-Risk'
+                                                                                                      (ID: <CA004-POLICY-ID>, state:
+                                                                                                      enabled);
+                                                                                                      'CA005-Remediate-High-User-Risk' (ID:
+                                                                                                      <CA005-POLICY-ID>, state: enabled).
+                                                                                                      This checks configuration, not every
+                                                                                                      account or sign-in. Coverage
+                                                                                                      advisory: broad MFA protection with
+                                                                                                      only approved exclusions was
+                                                                                                      verified. Exclusion advisory:
+                                                                                                      'CA001-Require-MFA-Admins': excluded
+                                                                                                      users=[];
+                                                                                                      groups=[<BREAK-GLASS-GROUP-ID>];
+                                                                                                      roles=[]; guests/external=False;
+                                                                                                      approved=True;
+                                                                                                      'CA002-Require-MFA-All-Users':
+                                                                                                      excluded users=[];
+                                                                                                      groups=[<BREAK-GLASS-GROUP-ID>];
+                                                                                                      roles=[]; guests/external=False;
+                                                                                                      approved=True;
+                                                                                                      'CA004-Require-MFA-Medium-High-SignIn-Risk':
+                                                                                                      excluded users=[];
+                                                                                                      groups=[<BREAK-GLASS-GROUP-ID>];
+                                                                                                      roles=[]; guests/external=False;
+                                                                                                      approved=True;
+                                                                                                      'CA005-Remediate-High-User-Risk':
+                                                                                                      excluded users=[];
+                                                                                                      groups=[<BREAK-GLASS-GROUP-ID>];
+                                                                                                      roles=[]; guests/external=False;
+                                                                                                      approved=True. Exclusions do not
+                                                                                                      change the enabled-policy result.
+                                                                                                      Registration advisory: 5 of 6 checked
+                                                                                                      enabled accounts are not reported
+                                                                                                      MFA-capable and 0 have missing data.
+                                                                                                      Registration data can lag by up to 36
+                                                                                                      hours and does not determine the
+                                                                                                      enabled-policy result.
+     2 IMPLEMENTED Ensure multifactor authentication is enabled for all users                         Enabled MFA policy found:
+                                                                                                      'CA002-Require-MFA-All-Users' (ID:
+                                                                                                      <CA002-POLICY-ID>, state: enabled);
+                                                                                                      'CA004-Require-MFA-Medium-High-SignIn-Risk'
+                                                                                                      (ID: <CA004-POLICY-ID>, state:
+                                                                                                      enabled);
+                                                                                                      'CA005-Remediate-High-User-Risk' (ID:
+                                                                                                      <CA005-POLICY-ID>, state: enabled).
+                                                                                                      This checks configuration, not every
+                                                                                                      account or sign-in. Coverage
+                                                                                                      advisory: broad MFA protection with
+                                                                                                      only approved exclusions was
+                                                                                                      verified. Exclusion advisory:
+                                                                                                      'CA002-Require-MFA-All-Users':
+                                                                                                      excluded users=[];
+                                                                                                      groups=[<BREAK-GLASS-GROUP-ID>];
+                                                                                                      roles=[]; guests/external=False;
+                                                                                                      approved=True;
+                                                                                                      'CA004-Require-MFA-Medium-High-SignIn-Risk':
+                                                                                                      excluded users=[];
+                                                                                                      groups=[<BREAK-GLASS-GROUP-ID>];
+                                                                                                      roles=[]; guests/external=False;
+                                                                                                      approved=True;
+                                                                                                      'CA005-Remediate-High-User-Risk':
+                                                                                                      excluded users=[];
+                                                                                                      groups=[<BREAK-GLASS-GROUP-ID>];
+                                                                                                      roles=[]; guests/external=False;
+                                                                                                      approved=True. Exclusions do not
+                                                                                                      change the enabled-policy result.
+                                                                                                      Registration advisory: 11 of 12
+                                                                                                      checked enabled accounts are not
+                                                                                                      reported MFA-capable and 0 have
+                                                                                                      missing data. Registration data can
+                                                                                                      lag by up to 36 hours and does not
+                                                                                                      determine the enabled-policy result.
+     3 IMPLEMENTED Enable Conditional Access policies to block legacy authentication                  Enforced legacy-authentication block:
+                                                                                                      CA003-Block-Legacy-Authentication.
+     4 IMPLEMENTED Enable Microsoft Entra ID Identity Protection sign-in risk policies                Enabled sign-in risk MFA policy
+                                                                                                      found:
+                                                                                                      'CA004-Require-MFA-Medium-High-SignIn-Risk'
+                                                                                                      (ID: <CA004-POLICY-ID>, state:
+                                                                                                      enabled). Matching requires All
+                                                                                                      users, medium and high sign-in risk,
+                                                                                                      MFA, and every-time
+                                                                                                      primary-and-secondary
+                                                                                                      reauthentication. Security Defaults
+                                                                                                      alone does not satisfy this check.
+                                                                                                      This checks configuration, not every
+                                                                                                      account or sign-in. Coverage
+                                                                                                      advisory: broad sign-in risk MFA
+                                                                                                      protection with only approved
+                                                                                                      exclusions was verified. Exclusion
+                                                                                                      advisory:
+                                                                                                      'CA004-Require-MFA-Medium-High-SignIn-Risk':
+                                                                                                      excluded users=[];
+                                                                                                      groups=[<BREAK-GLASS-GROUP-ID>];
+                                                                                                      roles=[]; guests/external=False;
+                                                                                                      approved=True. Exclusions do not
+                                                                                                      change the enabled-policy result.
+     5 IMPLEMENTED Enable Microsoft Entra ID Identity Protection user risk policies                   Enabled user risk remediation policy
+                                                                                                      found:
+                                                                                                      'CA005-Remediate-High-User-Risk' (ID:
+                                                                                                      <CA005-POLICY-ID>, state: enabled).
+                                                                                                      Matching requires All users, high
+                                                                                                      user risk, MFA AND exactly one
+                                                                                                      remediation control (passwordChange
+                                                                                                      or riskRemediation), and every-time
+                                                                                                      primary-and-secondary
+                                                                                                      reauthentication. Modern
+                                                                                                      riskRemediation requires an MFA
+                                                                                                      authentication strength. Security
+                                                                                                      Defaults alone does not satisfy this
+                                                                                                      check. This checks configuration, not
+                                                                                                      every account or sign-in. Coverage
+                                                                                                      advisory: broad user risk remediation
+                                                                                                      protection with only approved
+                                                                                                      exclusions was verified. Exclusion
+                                                                                                      advisory:
+                                                                                                      'CA005-Remediate-High-User-Risk':
+                                                                                                      excluded users=[];
+                                                                                                      groups=[<BREAK-GLASS-GROUP-ID>];
+                                                                                                      roles=[]; guests/external=False;
+                                                                                                      approved=True. Exclusions do not
+                                                                                                      change the enabled-policy result.
+     6 IMPLEMENTED Ensure user consent to apps accessing company data on their behalf is not allowed  No default-user self-consent policy
+                                                                                                      is assigned. Existing consent grants
+                                                                                                      are not revoked by this setting.
+     7 IMPLEMENTED Only invited users should be automatically admitted to Teams meetings              Global: AutoAdmittedUsers is
+                                                                                                      'InvitedUsers'.
+     8 IMPLEMENTED Configure which users are allowed to present in Teams meetings                     Global: DesignatedPresenterRoleMode
+                                                                                                      is 'OrganizerOnlyUserOverride'.
+     9 IMPLEMENTED Restrict anonymous users from joining meetings                                     Global:
+                                                                                                      AllowAnonymousUsersToJoinMeeting is
+                                                                                                      'False'.
+    10 IMPLEMENTED Ensure 'Self service password reset enabled' is set to 'All'                       Password reset > Properties = All is
+                                                                                                      recorded as operator-confirmed by the
+                                                                                                      script default. Registration note: 0
+                                                                                                      of 12 enabled member accounts are
+                                                                                                      reported SSPR-registered; 12 are not
+                                                                                                      registered and 0 have missing
+                                                                                                      registration data. 0 are reported
+                                                                                                      SSPR-capable; 12 are not capable and
+                                                                                                      0 have missing capability data.
+                                                                                                      Registration data can lag by up to 36
+                                                                                                      hours.
+
+Summary: 10 implemented, 0 not configured, 0 unknown (10 recommendations).
+Snapshot: C:\SecureM365Snapshots\<TENANT-ID>-m365-recommendation-status-20261020-121640470Z.json
+
+Note: identifiers (tenant ID, Conditional Access policy IDs, group IDs, UPNs) replaced with <...> placeholders for public submission. Results unchanged.
